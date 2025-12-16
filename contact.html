@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pavan Café | Contact</title>
+<style>
+:root{
+  --brown:#6d4c41;
+  --accent:#a67c52;
+  --bg1:#f7efe3;
+  --bg2:#fff3dc;
+  --bg3:#fce6c5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  min-height:100vh;
+  background:linear-gradient(120deg,var(--bg1),var(--bg2),var(--bg3));
+  background-size:300% 300%;
+  animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.container{max-width:800px;margin:auto;padding:24px}
+
+header{
+  background:var(--brown);
+  color:#fff;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:30px;
+  text-align:center;
+}
+header h2{margin-bottom:16px}
+nav a{
+  color:#fff;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+  padding:8px 14px;
+  background:rgba(255,255,255,.2);
+  border-radius:8px;
+  display:inline-block;
+  margin-top:10px;
+}
+nav a:hover{background:rgba(255,255,255,.3)}
+
+.box{
+  max-width:600px;
+  margin:40px auto;
+  background:rgba(255,255,255,.9);
+  padding:32px;
+  border-radius:16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+.box p{
+  margin:20px 0;
+  font-size:18px;
+  color:var(--brown);
+  padding:12px;
+  background:rgba(255,255,255,.6);
+  border-radius:10px;
+  border-left:4px solid var(--accent);
+}
+
+.box b{
+  color:var(--brown);
+  font-size:20px;
+}
+
+footer{
+  margin-top:40px;
+  background:var(--brown);
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  border-radius:12px;
+}
+
+@media(max-width:600px){
+  nav a{display:block;margin:5px 0}
+  .box{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<header>
+<h2>Contact Pavan Café</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="box">
+<p><b>📍 Location:</b> Main Road, Your City</p>
+<p><b>📞 Phone:</b> +91 98765 43210</p>
+<p><b>⏰ Timings:</b> 6 AM – 10 PM</p>
+<p><b>📧 Email:</b> info@pavancafe.com</p>
+</div>
+
+<footer>© 2025 Pavan Café | Fresh & Delicious Every Day</footer>
+</div>
+
+</body>
+</html>
